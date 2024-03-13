@@ -1,0 +1,180 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+    background: linear-gradient(rgb(3, 24, 66), rgb(126, 217, 237));
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header li a{
+    color: black;
+}
+
+#maple-logo {
+    width: 82px;
+    height: 60px;
+}
+
+#feng{
+    color: rgb(222, 197, 108);
+    font-size: min(50vw, 2.5em);
+    text-align: center;
+    padding-top: 0;
+    position: fixed;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}  
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 60px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+main section{
+    padding-top: 50px;
+    z-index: 0;
+}
+
+
+#title {
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0;
+    color: white;
+}
+
+#illustration {
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    background-image: url("images/PersonBackground2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 25px;
+}
+
+#img-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#image{
+    
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+
+#image:hover {
+    
+    transform:scale(1.06);
+    transform:scale(1.06);
+    -ms-transform:scale(1.06); /* IE 9 */
+    -moz-transform:scale(1.06); /* Firefox */
+    -webkit-transform:scale(1.06); /* Safari and Chrome */
+    -o-transform:scale(1.06);
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+#img-caption {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin: 1em;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#tribute-info h1 {
+    text-align: center;
+
+}
+
+#tribute-info fieldset {
+    justify-content: center;
+    margin: 20px auto;
+    width: 550px;
+    border: none;
+    line-height: 3;
+}
+
+#tribute-info fieldset p {
+    margin-left: 30px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+#tribute-info li, p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#notes p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
